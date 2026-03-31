@@ -1,0 +1,1 @@
+# payment-stimu initgit add README.mdgit commit -m first commitgit branch -M maingit remote add origin https://github.com/tobezhanabi/payment-stimu.gitgit push -u origin main
