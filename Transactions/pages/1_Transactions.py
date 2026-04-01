@@ -19,7 +19,7 @@ uploaded_file = st.file_uploader("Please upload a CSV file", type=['csv'])
 if uploaded_file is not None:
         highticketval=int(hightickerstring)
         dfpreclean = pd.read_csv(uploaded_file)
-        buffer = io.ByterIO()
+        buffer = io.BytesIO()
 
         dfpreclean.drop(['Transaction_ID', 'Auth_code'],axis=1, inplace= True)      
         dfpreclean2 = dfpreclean[dfpreclean['Success']==1]      
